@@ -171,7 +171,7 @@ function Rules() {
   return (
     <section className="sec" aria-labelledby="rules-title">
       <div className="ornament" aria-hidden="true" />
-      <h2 id="rules-title" className="center">Four rules glazed in.</h2>
+      <h2 id="rules-title" className="center">How KilnMetric works with your engineers.</h2>
       <div className="rules">{rules.map(([t, d], i) => <div key={t} data-rise><span className="rn">{['I', 'II', 'III', 'IV'][i]}</span><h3>{t}</h3><p>{d}</p></div>)}</div>
     </section>
   );
@@ -181,7 +181,7 @@ function Plates() {
   return (
     <section className="sec band" aria-labelledby="pl-title">
       <p className="eyebrow center">Why it matters</p>
-      <h2 id="pl-title" className="center">An industry fired at 1,200 degrees.</h2>
+      <h2 id="pl-title" className="center">The scale of ceramic production.</h2>
       <div className="statplates">{site.stats.map((s) => (
         <figure key={s.label} className="statplate" data-rise><div className="rim"><b>{s.value}</b></div><figcaption>{s.label}<a href={s.url} target="_blank" rel="noopener noreferrer">{s.source} ↗</a></figcaption></figure>
       ))}</div>
@@ -251,7 +251,7 @@ function Faq() {
   return (
     <section className="sec" aria-labelledby="faq-title">
       <p className="eyebrow center">FAQ</p>
-      <h2 id="faq-title" className="center">Questions from the kiln floor.</h2>
+      <h2 id="faq-title" className="center">Frequently asked questions.</h2>
       <div className="faq">{FAQ.map(([q, a]) => <details key={q}><summary>{q}</summary><p>{a}</p></details>)}</div>
     </section>
   );
